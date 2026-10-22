@@ -313,7 +313,7 @@ def _criterios_convergencia(matriz):
 
 def _relatar_criterios(criterios):
     return ["## Critérios de convergência", _tabela(
-        ["Linha", "|a_ii|", "Soma fora da diagonal", "Critério >=", "Beta"],
+        ["Linha", r"\|a_ii\|", "Soma fora da diagonal", "Critério >=", "Beta"],
         [[i + 1, linha["diagonal"], linha["soma_fora_diagonal"],
           "Atende" if linha["atende"] else "Não atende", criterios["betas"][i]]
          for i, linha in enumerate(criterios["linhas"])],

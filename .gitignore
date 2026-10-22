@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 .verificacao/
 resultado.md
+tests/
+validacao_exercicios.txt
